@@ -7,8 +7,6 @@ class OrderBooks:
         self.orders = {'USD': {True: {1: None}}}
         self.limit_orders = {}
 
-        self.last_updated = 0
-
     def ratio(self, market, depth=10):
         obk_bids = sorted(self.orders[market][True].items())
         obk_bids.reverse()
